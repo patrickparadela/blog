@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #e6e6e6;
+}
+
+header {
+    background-color: #f7b600;
+    padding: 40px;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+header > h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #f7b600;
+}
+
+h3 {
+    background-color: #ccc;
+    color: #565656;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 4px;
+}
+
+.branco {
+    color: white;
+}
+
+nav {
+    text-align: center;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #fff;
+}
+
+nav > a:hover {
+    color: #f7b600;
+    background: #fff;
+    border-radius: 5px;
+}
+
+main {
+    width: 920px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.postagem {
+    width: 660px;
+}
+
+.postagens {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 5px;
+    float: left;
+}
+
+.postagens2 {
+    margin-top: 30px;
+}
+
+.postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.lateral {
+    width: 240px;
+    float: right;
+}
+
+.conteudo-lateral {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    text-align: center;
+    padding: 15px;
+}
+
+.lista-ul {
+    margin-top: 5px;
+    color: #4d4c4c;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 100%;
+}
+
+/* Media Queries para dispositivos menores */
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .postagem {
+        width: 100%;
+    }
+
+    .lateral {
+        width: 100%;
+        float: none;
+    }
+
+    .imagens {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    header > h1 {
+        font-size: 2em;
+    }
+
+    nav > a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .postagens, .conteudo-lateral {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header > h1 {
+        font-size: 1.8em;
+    }
+
+    nav {
+        font-size: 0.9em;
+    }
+
+    .postagens {
+        padding: 10px;
+    }
+
+    .conteudo-lateral {
+        padding: 8px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
